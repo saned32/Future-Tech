@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --color: #2978cb;
+    --bold-lead-color: #7a7a7a;
+    --light-lead-color: #f3f3f3;
+    --padding: 8%;
+    --main-transition: 0.3s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--color);
+}
+
+input{
+    outline: none;
+}
+
+::selection{
+  background-color: #023162;
+  color: white;
+}
+
+/* section-title */
+
+.section-title{
+    position: relative;
+    font-size: 40px;
+    /* margin: auto; */
+    width: fit-content;
+}
+
+.section-title::after{
+background-color: var(--color);
+}
+
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    height: 5px;
+    width: calc(100% - 30px);
+}
+
+
+/* main-btn */
+.main-btn{
+    color: #7a7a7a;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    opacity: 60%;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+}
+
+.main-btn:hover{
+    color: var(--color);
+    opacity: 100%;
+}
+
+.main-btn::after {
+background-color:var(--color);
+}
+
+
+.main-btn::after {
+content: "";
+position: absolute;
+bottom: -10px;
+left: 0px;
+height: 5px;
+width: calc(100% - 20px);
+}
+
+.insta{
+    color: rgb(242, 78, 78);
+}
+
+.linkedin{
+    color: #2978cb;
+}
+
+.facebook{
+    color: #023162;
+}
+
+.whats{
+    color: green;
+}
+
+.twitter{
+    color: blue;
+}
+
+
+/* ************************************************************* */
+/* Start header */
+/* ************************************************* */
+li a {
+    display: inline !important;
+    color: rgb(0, 0, 0) !important;
+    transition: 3s;
+}
+
+
+.nav-item  a:hover{
+    background-color: var(--light-lead-color) !important;
+    color: var(--color) !important;
+    border-radius: 15px;
+}
+
+
+
+@media (max-width:1000px) {
+    li a {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .nav-item  a:hover{
+        background-color: #ffffff !important;
+        color: var(--color) !important;
+    }
+
+}
+
+
+.navbar-nav  .chat{
+    background-color: var(--color);
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 260px;
+}
+
+@media (max-width:1280px) {
+    .navbar-nav  .chat{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar-nav  .chat{
+        margin-left: 0;
+    }
+
+}
+
+.navbar-nav  .chat .chatlink{
+    color: #ffffff !important;
+}
+
+.navbar-nav  .chat .chatlink:hover{
+    color: #ffffff !important;
+    background-color: #2978cb !important;
+}
+
+
+.nav-item svg{
+    color: white;
+    padding: 0 4px !important;
+}
+
+.nav-limkss{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:912px) {
+    .nav-limkss{
+        display: block;
+        padding: 15px;
+    }
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar span{
+    color: #000000 !important;
+}
+
+.img-nav{
+    width: 200px;
+}
+
+@media (max-width:912px) {
+    .img-nav{
+        width: 120px;
+    }
+}
+
+/* ************************************************************* */
+/* End header */
+/* ************************************************* */
+
+
+
+/* start landing */
+.landing-about{
+    width: 100%;
+    min-height: 80vh;
+     display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    background: url(../image/PROJECT-BACKGROUND.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #060709;
+}
+
+
+.landing-about h1{
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+}
+
+
+
+.landing-about p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width : 920px) {
+    .landing-about p{
+        line-height: 17.8px;
+    }
+}
+.landing-about .text2{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.landing-about .text2 p{
+  line-height: 15.9px;
+  font-size: 15px !important;
+}
+
+/* end landing */
+/* Start markting */
+ .box img{
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 16px;
+}
+/* End markting */
+
+
+/* Start Main */
+
+/* Slideshow container */
+ 
+
+.slideshow-container1{
+    max-width: 1000px !important;
+    position: relative !important;
+    margin: auto !important;
+    }
+
+    /* Next & previous buttons */
+.prev1 , .next1 {
+    cursor: pointer !important;
+    position: absolute !important;
+    top: 35% !important;
+    width: auto !important;
+    margin-top: -22px !important;
+    padding: 16px !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    transition: 0.6s ease !important;
+    border-radius: 0 3px 3px 0 !important;
+    }
+
+    /* Position the "next button" to the right */
+.next1 {
+    right: 13px !important;
+    border-radius: 3px 0 0 3px !important;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover {
+    background-color: rgba(0,0,0,0.8) !important;
+    }
+
+.mySlides1 {
+    display:none !important;
+    }
+.active-slide {
+    display:block !important;
+    }
+    /* Number text (1/3 etc) */
+.numbertext1 {
+    color: #f2f2f2 !important;
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+    position: absolute !important;
+    top: 0 !important;
+    }
+
+    /* The dots/bullets/indicators */
+.dot1 {
+    cursor:pointer !important;
+    height: 13px !important; 
+    width: 13px !important;
+    margin: 0 2px !important ;
+    background-color: #bbb !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    transition: background-color 0.6s ease !important;
+    }
+
+.active, .dot1:hover {
+    background-color: #717171 !important;
+    }
+
+    /* Fading animation */
+.fade1 {
+    -webkit-animation-name: fade1 !important;
+    -webkit-animation-duration: 1.5s !important;
+    animation-name: fade1 !important;
+    animation-duration: 1.5s !important;
+    }
+
+ @-webkit-keyframes fade1 {
+    from {opacity: .4!important}
+    to {opacity: 1 !important}
+    }
+
+@keyframes fade1 {
+    from {opacity: .4 !important}
+    to {opacity: 1 !important}
+    }
+
+
+.buttom-img{
+    color: var(--bold-lead-color);
+    }
+.buttom-img:hover{
+    color: var(--black-color);
+    }
+
+.Caption{
+    opacity: 70%;
+    }
+
+
+
+@keyframes sliding{
+    5%,10%{right: 0;}
+    15%,30%{right: -100% ;}
+    35%,50%{right: -200% ;}
+    55%,70%{right: -300% ;}
+    75%,90%{right: -400% ;}
+
+}
+
+.slider ul:hover{
+    animation-play-state: paused;
+}
+
+.vidio .project-video video{
+    width: 100%;
+}
+
+/* End main */
+
+/* Start Footer */
+.footer{
+    background-color:var(--color);
+    color: white;
+    overflow: hidden;
+}
+
+.foot-description p{
+    letter-spacing: 1px;
+}
+
+.copyright{
+    color: white;
+    background-color: #023162;
+    text-align: center;
+}
+
+.mylinkss a{
+    font-size: 19px;
+    color: white;
+}
+
+.quick-links a{
+    display: block;
+    color: white;
+}
+/* End footer */
